@@ -31,52 +31,13 @@
 
 ## Диаграммы
 
-### BPMN (основной процесс)
+### Activity Diagram (Процесс разработки)
 
-Файл: `diagrams/process.bpmn`  
-(можно открыть в любом BPMN-редакторе, например bpmn.io)
+![Activity Diagram](diagrams/activity.svg)
 
-### PlantUML — Activity Diagram
+### Sequence Diagram (Взаимодействие ролей)
 
-```plantuml
-@startuml
-start
-:Сбор требований;
-:Анализ и приоритизация;
-:Проектирование;
-:Разработка;
-:Тестирование;
-if (Есть критические баги?) then (да)
-  :Исправление;
-  back to Тестирование
-else (нет)
-  :Подготовка релиза;
-  :Деплой;
-  :Сбор обратной связи;
-stop
-endif
-@enduml
-```
-
-### PlantUML — Sequence Diagram (пример взаимодействия)
-
-```plantuml
-@startuml
-actor ProductOwner
-participant Analyst
-participant Developer
-participant QA
-participant DevOps
-
-ProductOwner -> Analyst : Передаёт требования
-Analyst -> Developer : User Stories
-Developer -> QA : Готовый функционал
-QA -> Developer : Баг-репорты
-Developer -> QA : Исправления
-QA -> DevOps : Готово к релизу
-DevOps -> ProductOwner : Релиз в продакшн
-@enduml
-```
+![Sequence Diagram](diagrams/sequence.svg)
 
 ## Роли в процессе
 
