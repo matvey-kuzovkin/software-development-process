@@ -9,8 +9,8 @@
 
 ### Activity Diagram (Процесс разработки)
 
-![Activity Diagram](diagrams/activity.svg)
+![Activity Diagram](activity.svg)
 
 ### Sequence Diagram (Взаимодействие ролей)
 
-![Sequence Diagram](diagrams/sequence.svg)
+![Sequence Diagram](sequence.svg)
