@@ -1,0 +1,15 @@
+@startuml
+actor "Product Owner" as PO
+participant "Analyst" as AN
+participant "Developer" as DEV
+participant "QA Engineer" as QA
+participant "DevOps" as DO
+
+PO -> AN : Передаёт требования
+AN -> DEV : User Stories + Acceptance Criteria
+DEV -> QA : Готовый функционал
+QA -> DEV : Баг-репорты
+DEV -> QA : Исправления
+QA -> DO : Готово к релизу
+DO -> PO : Релиз в продакшн
+@enduml
