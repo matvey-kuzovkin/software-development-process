@@ -5,6 +5,12 @@
 - `activity.puml` — Activity Diagram (PlantUML)
 - `sequence.puml` — Sequence Diagram (PlantUML)
 
-Чтобы посмотреть диаграммы:
-1. Скопируй содержимое файла
-2. Вставь на сайт [plantuml.com/plantuml](https://www.plantuml.com/plantuml/uml/)
+## Диаграммы
+
+### Activity Diagram (Процесс разработки)
+
+![Activity Diagram](diagrams/activity.svg)
+
+### Sequence Diagram (Взаимодействие ролей)
+
+![Sequence Diagram](diagrams/sequence.svg)
